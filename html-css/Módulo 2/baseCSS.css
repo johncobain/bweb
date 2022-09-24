@@ -1,0 +1,29 @@
+body{
+    background-color: #202225;
+}
+
+#title{
+    color: red;
+}
+
+.texto{
+    color: green;
+}
+
+img{
+    width: 150px;
+}
+
+#title, 
+.texto{
+    font-size: 25px;
+    font-family: cursive;
+}
+
+#subtitle{
+    color: white;
+}
+
+ul li{
+    color: pink;
+}
