@@ -1,0 +1,30 @@
+body{
+    background-color: #202225;
+}
+
+#title{
+    background-color: #ff00dd;
+    color: rgb(100, 0, 255);
+}
+
+.texto{
+    color: green;
+}
+
+img{
+    width: 150px;
+}
+
+#title, 
+.texto{
+    font-size: 25px;
+    font-family: cursive;
+}
+
+#subtitle{
+    color: white;
+}
+
+ul li{
+    color: pink;
+}
