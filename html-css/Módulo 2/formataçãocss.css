@@ -7,14 +7,18 @@ body{
     font-size: 17px;
 }
 
+h1{
+    font-family: 'Bungee Spice';
+}
+
 p{
     color: #0000ff;
     font-size: 20px;
-    font-family: Helvetica,Arial;
+    font-family: 'Nabla';
     text-align: left;
     text-transform: lowercase;
     letter-spacing: 5px;
     word-spacing: 10px;
     line-height: 40px;
-    text-shadow: 5px 5px 3px #ff0000;
+    text-shadow: 3px 3px 10px #000000;
 }
