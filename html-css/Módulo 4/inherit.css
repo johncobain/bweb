@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    background-color: cyan;
+}
+.box{
+    font-size: 20px;
+    color: #00aaff;
+}
+
+h1{
+    font-size: 30px;
+    color: rgb(200, 50, 255);
+}
+
+.box h1{
+    font-size: inherit;
+    color: hsl(300, 100%, 50%);
+    border: 1px solid currentColor;
+}
