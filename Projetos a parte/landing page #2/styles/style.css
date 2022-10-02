@@ -1,0 +1,177 @@
+:root{
+    --main-color: #1ABC9C
+}
+
+body{
+    height: 100vh;
+    font-family: 'Abel', sans-serif;
+}
+/*navigation area*/
+
+nav{
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+.logo img{
+    width:50px;
+    margin-right: 25px;
+}
+
+.tel{
+    display: flex;
+    align-items: center;
+}
+
+.tel img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.tel a{
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration:underline solid rgba(0, 0, 0, 0);
+    color: var(--main-color);
+    transition: .2s;
+}
+
+.tel a:hover{
+    text-decoration: underline solid var(--main-color);
+    opacity: .7;
+}
+
+/*main area*/
+main{
+    background-color: var(--main-color);
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*form area*/
+article{
+    width: 35%;
+    margin: 30px 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+article h2{
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+article form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+article form input{
+    padding: 15px 10px;
+    width: 95%;
+    height: 30px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 10px;
+}
+
+article form button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px;
+    width: 99%;
+    border: none;
+    border-radius: 10px;
+    background-color: #fdb563;
+    font-size: 25px;
+    color: #fff;
+}
+
+article form button img{
+    width: 50px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*aside area*/
+
+aside{
+    width: 50%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+}
+
+aside h1 span{
+    text-decoration: underline;
+}
+
+aside h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+aside p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+aside p img{
+    width: 75px;
+}
+
+aside .img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+aside #bottom-img{
+    width: 80%;
+}
+
+/*footer area*/
+
+footer{
+    padding: 35px 120px;
+    font-size: 20px;
+}
