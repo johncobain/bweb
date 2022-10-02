@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+
+#teste{
+    background-color: #00f;
+    background: linear-gradient(135deg,#70f, #000);
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px 100px 100px 100px;
+}
+
+input{
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 5px;
+}
