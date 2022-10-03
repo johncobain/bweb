@@ -1,0 +1,40 @@
+@keyframes jujuba {
+    0% {background-color: #f00;top:0;left:0;}
+    25% {background-color: #0f0;top:100px;left:100px;}
+    50% {background-color: #0ff;top:200px;left:200px;}
+    75% {background-color: #90f;top:0px;left:200px;}
+    100% {background-color: #f00;top:0px;left:0px;}
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.exemplo{
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+    box-shadow: 10px 10px 0px #777;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: jujuba;
+    animation-duration: 4s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+}
+
+.text{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6{
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 2px 2px 0px #7877;
+}
