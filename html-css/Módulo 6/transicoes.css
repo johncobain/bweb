@@ -17,3 +17,10 @@
     height: 300px;
     background-image: url(./sources/cookiewhats.png);
 }
+
+.text{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
