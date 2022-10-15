@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    background-color: #202124;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    margin: 9px 0;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+}
+
+nav ul a:hover{
+    text-decoration: underline 1px solid;
+}
+
+nav ul #menu{
+    width: 20px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+nav ul #profile{
+    border-radius: 50%;
+    padding: 4px;
+}
+
+nav ul #menu:hover,
+nav ul #profile:hover{
+    background-color: #2f3034;
+    border-radius: 50%;
+}
+
+/*main*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    margin-top: 22px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form input{
+    
+    width: 28%;
+    background-color: #202124;
+    border: 1px solid #5f6368;
+    color: #bdc1c6;
+    padding: 14px 20px;
+    border-radius: 30px;
+}
+
+form input:hover,
+form input:focus{
+    outline: none;
+    border: 1px solid #303134;
+    background-color: #303134;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+form button{
+    height: 36px;
+    width: 140px;
+    color: #fff;
+    background-color: #303134;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button:nth-child(1){
+    margin-right: 7px;
+}
+
+form button:hover{
+    border: 1px solid #5f6368;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    background-color: #171717;
+    color: #9aa0a6;
+}
+
+footer .top{
+    padding: 15px 30px;
+    border-bottom: 1px solid #3c4043;
+    font-size: 15px;
+}
+
+footer .bottom{
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 14px;
+}
+
+footer .bottom ul a{
+    text-decoration: none;
+    color: #9aa0a6;
+}
+
+footer .bottom ul a:hover{
+    text-decoration: underline solid #9aa0a6;
+}
