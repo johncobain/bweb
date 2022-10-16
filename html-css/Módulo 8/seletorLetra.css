@@ -1,0 +1,32 @@
+div::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div::first-line{
+    font-size: 20px;
+}
+
+div{
+    background-color: #00f;
+    height: 100px;
+    padding: 10px;
+    color: white;
+}
+
+div:first-child{
+    border-radius: 20px 20px 0 0;
+}
+
+
+div:nth-child(2){
+    background-color: #f09;
+}
+
+div:nth-last-child(5){
+    background-color: #90f;
+}
+
+body :not(p){
+    font-style: italic;
+}
