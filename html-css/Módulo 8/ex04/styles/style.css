@@ -65,19 +65,44 @@ form{
     gap: 30px;
 }
 
-form input{
-    
-    width: 28%;
+form label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
     background-color: #202124;
     border: 1px solid #5f6368;
     color: #bdc1c6;
-    padding: 14px 20px;
     border-radius: 30px;
+    padding: 0 15px;
 }
 
-form input:hover,
-form input:focus{
+form img{
+    height: 20px;
+}
+
+form #close{
+    border-right: 1px solid #5f6368;
+    padding: 4px 10px 4px 0;
+    margin: 6px;
+}
+
+form label a{
+    display: flex;
+    align-items: center;
+}
+form input{
+    width: 80%;
+    padding: 3px;
+    background: transparent;
+    border: none;
     outline: none;
+    color: #e8eaed;
+    font-size: 16px;
+}
+
+form label:hover,
+form label:focus{
     border: 1px solid #303134;
     background-color: #303134;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);

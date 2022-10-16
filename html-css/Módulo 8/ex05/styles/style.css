@@ -1,0 +1,281 @@
+:root{
+    --link-color: #8ab4f8;
+    --desc-color: #bdc1c6;
+    --secondary-color: #969ba1;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    background-color: #202124;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    padding: 10px 20px 0 75px;
+    border-bottom: 1px solid #3c4043;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search img{
+    height: 24px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+#logo{
+    height: 34px;
+}
+
+.left label{
+    background: #303134;
+    display: flex;
+    align-items: center;
+    padding: 9px 18px;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px rgba(23, 23, 23, .24);
+}
+
+.left label:hover{
+    box-shadow: 3px 3px 3px rgba(23, 23, 23, .7);;
+}
+
+.left input{
+    width: 500px;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.left button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.left #close{
+    border-right: 1px solid #3c4043;
+    padding-right: 15px;
+}
+
+.right ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.right ul img{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.right #profile{
+    border-radius: 50%;
+    height: 30px;
+    padding: 4px;
+}
+
+.right ul img:hover,
+.right #profile:hover{
+    background-color: #2f3034;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 150px;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+nav a.active{
+    color: var(--link-color);
+    border-bottom: 3px solid var(--link-color);
+}
+
+nav ul li img{
+    height: 18px;
+    margin-right: 5px;
+}
+
+#tools{
+    padding: 2px 0;
+}
+
+#tools button{
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 4px;
+}
+
+#tools button:hover{
+    box-shadow: 0 1px 1px rgb(23, 23, 23, .9);
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
+}
+
+/*main*/
+main{
+    padding-left: 234px;
+    width: 650px;
+}
+
+main span{
+    display: block;
+    margin: 12px 0 20px;
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+.card{
+    margin-bottom: 30px;
+}
+
+.card a p,
+.card a span,
+.card .desc span{
+    display: inline;
+    font-size: 14px;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--desc-color);
+}
+
+.card a h3{
+    margin: 7px 0 3px 0;
+    color: var(--link-color);
+    font-weight: 400;
+}
+
+.card a:hover h3{
+    text-decoration: underline solid 2px;
+}
+
+.card .desc{
+    font-size: 14px;
+    color: var(--desc-color);
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+}
+
+.pages ul{
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+.pages a{
+    text-decoration: none;
+}
+
+.pages span{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 2px 0 0;
+    text-align: center;
+}
+
+.pages .number{
+    font-size: 14px;
+    color: var(--link-color);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+.pages .more span{
+    margin-left: 10px;
+    color: var(--link-color);
+}
+
+.pages a:hover .number{
+    text-decoration: underline solid 1px;
+}
+
+/*footer*/
+footer{
+    background-color: #171717;
+    color: #9aa0a6;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+footer .top{
+    padding: 0 234px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid #3c4043;
+}
+
+footer .bottom{
+    padding: 0 234px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+footer .bottom ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .bottom ul a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+footer .bottom ul a:hover{
+    color: var(--desc-color);
+}
