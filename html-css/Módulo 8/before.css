@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+
+span::before{
+    content: '(: ';
+}
+
+span::after{
+    content: ' :)';
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+li::before{
+    content: "❤ ";
+    color: red;
+}
+
+li::after{
+    content: ' 🥰';
+}
+
+.balao{
+    background-color: #00f;
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.balao::after{
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    border: 15px solid;
+    border-color: #00f transparent transparent transparent;
+}
