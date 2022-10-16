@@ -1,0 +1,42 @@
+input, a{
+    display: block;
+    margin: 10px 0;
+}
+
+input[required]{
+    background-color: #f00;
+    border: 1px solid #00f;
+}
+
+input[type=password]{
+    background: #0f0;
+}
+
+a[href*="economia"]{
+    background-color: #a0f;
+}
+
+a[href*="educacao"]{
+    background-color: #0af;
+}
+
+a[href^='https:']{
+    color: #af0;
+}
+
+a[href^='http:']{
+    color: #049;
+}
+
+a[href$='.com']{
+    background-color: #ccc;
+}
+
+div{
+    margin: 20px;
+    height: 30px;
+}
+
+div:empty{
+    background-color: #70f;
+}
