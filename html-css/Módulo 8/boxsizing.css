@@ -1,0 +1,25 @@
+div{
+    width: 500px;
+    height: 150px;
+    background: #70f;
+    border: 10px solid #f07;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px 0;
+    box-shadow: 10px 10px 1px #777;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+} 
+
+.name{
+    width: 400px;
+    height: 50px;
+    font-size: 27px;
+    color: #f00;
+}
+
+.name::placeholder{
+    color: #f99;
+}
