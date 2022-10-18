@@ -1,0 +1,23 @@
+/*degradê no bg
+sombra
+
+hover*/
+body{
+    text-align: center;
+    padding: 50px;
+}
+
+.botao{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    background: linear-gradient(225deg, #c0f, #70f);
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #777;
+}
+
+.botao:hover{
+    background: linear-gradient(45deg, #f0f, #a0f);
+}
