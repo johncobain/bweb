@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.selo{
+    width: 300px;
+    height: 75px;
+    background-color: #09f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid #ddd;
+    outline-offset: -6px;
+    box-shadow: 2px 2px 10px #444;
+    margin: 35px -75px;
+    transform: rotate(-45deg);
+}
+
+a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 10px #555;
+    text-decoration: none;
+}
