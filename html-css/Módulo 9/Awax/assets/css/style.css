@@ -1,3 +1,7 @@
+:root{
+    --main-color: #b28756;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -57,11 +61,98 @@ header{
     padding: 0 10px;
     border-bottom: 5px solid transparent;
     height: 100px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .menu li a:hover,
 .menu .active a{
-    border-bottom: 5px solid #b28756;
-    color: #b28756;
+    border-bottom: 5px solid var(--main-color);
+    color: var(--main-color);
+}
+
+
+.banner{
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+    margin-left: 0;
+    transition: 1.5s;
+}
+
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.banner .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.banner .slidearea h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.banner .slidearea h1 span{
+    color: var(--main-color);   
+}
+
+.banner .slidearea h2{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.banner .slidearea a{
+    display: block;
+    background-color: var(--main-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.banner .sliders-pointers{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .sliders-pointers .pointer{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.banner .sliders-pointers .pointer.active{
+    background-color: var(--main-color);
 }
