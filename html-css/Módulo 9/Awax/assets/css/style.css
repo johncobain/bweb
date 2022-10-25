@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -203,6 +204,12 @@ header{
     color: #fff;
 }
 
+.default.light.bg-grey{
+    background-color: #ddd;
+}
+.bg-grey .section-desc{
+    color: #999;
+}
 
 
 
@@ -455,5 +462,183 @@ header{
 }
 
 .section-team--social a:hover{
+    background-color: var(--main-color);
+}
+
+
+
+
+
+.section-happy-clients{
+    overflow: hidden;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.section-happy-clients .sliders-happy-clients{
+    width: 1000vw;
+    height: 100%;
+    margin-left: 0;
+    transition: 1s;
+}
+
+.section-happy-clients .slide-happy-clients{
+    width: 900px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+}
+
+.section-happy-clients .slidearea-happy-clients{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 30px;
+}
+
+
+.section-happy-clients .client{
+    text-align: center;
+}
+
+.section-happy-clients .client img{
+    width: 150px;
+    height: 150px;
+}
+
+.slide-happy-clients .client h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.slide-happy-clients .client p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.slide-happy-clients .quote{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.slide-happy-clients .quote p{
+    margin-top: 15px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
+
+
+.section-happy-clients .sliders-pointers-happy-clients{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-happy-clients .sliders-pointers-happy-clients .pointer-happy-clients{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.section-happy-clients .sliders-pointers-happy-clients .pointer-happy-clients.active{
+    background-color: var(--main-color);
+}
+
+.section-brands{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-brands ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-brands li:hover{
+    opacity: .5;
+}
+
+
+.section-price{
+    display: flex;
+    gap: 30px;
+}
+
+.section-price .price-card{
+    background-color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.section-price .price-card .price-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.section-price .price-card .price-price{
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.section-price .price-card span{
+    color: #ccc;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.section-price .price-card .price-features ul{
+    margin: 20px 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.section-price .price-card .price-features ul li{
+    font-size: 10px;
+}
+
+.section-price .price-card .price-features ul li.line{
+    width: 15px;
+    height: 1px;
+    background-color: #000;
+}
+
+.section-price .price-card .price-button{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 17px 40px;
+    background-color: #333;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.section-price .price-card .price-button:hover{
     background-color: var(--main-color);
 }

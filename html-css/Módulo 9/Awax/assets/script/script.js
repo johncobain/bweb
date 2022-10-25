@@ -35,3 +35,22 @@ function changeSlideTeam(slide){
         document.getElementById('pointerT3').classList.add('active');
     }
 }
+
+function changeSlideClients(slide){
+    const sliders = document.querySelector('.sliders-happy-clients');
+
+    const pointers = document.querySelectorAll('.pointer-happy-clients');
+
+    pointers.forEach(pointer => pointer.classList.remove('active'));
+
+    if(slide === 1){
+        sliders.style.marginLeft = '0';
+        document.getElementById('pointerC1').classList.add('active');
+    }else if(slide === 2){
+        sliders.style.marginLeft = '-900px';
+        document.getElementById('pointerC2').classList.add('active');
+    }else if(slide === 3){
+        sliders.style.marginLeft = '-1800px';
+        document.getElementById('pointerC3').classList.add('active');
+    }
+}
