@@ -820,3 +820,43 @@ header{
 .social-area .social-item a:hover{
     opacity: .5;
 }
+
+
+.section-contact form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+    margin: auto;
+}
+
+.section-contact input,
+.section-contact textarea{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    outline: 0;
+    display:block;
+    height:40px;
+    background:transparent;
+    margin-top: 30px;
+}
+
+.section-contact textarea{
+    height: 100px;
+    resize: none;
+}
+
+.section-contact .contact-split{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.section-contact button{
+    border: none;
+    margin: 60px auto 0;
+    cursor: pointer;
+}
