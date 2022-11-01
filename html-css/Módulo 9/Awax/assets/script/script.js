@@ -76,3 +76,7 @@ function changeSlidePlans(slide){
         document.getElementById('pointerP4').classList.add('active');
     }
 }
+
+function showMenu(){
+    document.querySelector('nav').classList.toggle('show');
+}
