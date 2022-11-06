@@ -1,8 +1,8 @@
 .container{
+    background-color: #ccc;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    gap: 30px 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 10px;
 }
 
 .item{
@@ -11,4 +11,39 @@
     padding: 20px;
     color: #fff;
     font-size: 20px;
+}
+
+.item1{
+    background-color: #0ff;
+    color: #000;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.item4{
+    background-color: #f0f;
+    color: #000;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.item5{
+    background-color: #f00;
+
+    grid-column: 1/3;
+    grid-row: 4/5
+}
+
+.item7{
+    background-color: #0f0;
+    color: #000;
+    grid-column: 3/4;
+    grid-row: 1/6;
+}
+
+.item11{
+    background-color: #ff0;
+    color: #000;
+    grid-column: 4 / 5;
+    grid-row: 4/6;
 }
