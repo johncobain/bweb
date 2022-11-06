@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+:root{
+    --main-color: #117050
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+
+.bar{
+    height: 22px;
+    width: 168px;
+    background-color: var(--main-color);
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 115px;
+    line-height: 120px;
+    margin: 0 0 50px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 20px 0;
+    width: 75%;
+    line-height: 50px;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 40px;
+    border: 2px solid #454545;
+    border-radius: 3px;
+    background-color: transparent;
+    text-decoration: none;
+    color: #454545;
+}
+
+.button:hover{
+    background-color: #454545;
+    color: #fff;
+}
+
+header .line{
+    background-color: var(--main-color);
+    height: 10px;
+}
+
+.header--area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-left img{
+    width: 64px;
+    height: 64px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header--search form{
+    display: flex;
+    width: 250px;
+}
+
+.header--search input{
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    max-width: 250px;
+}
+
+.header--search button{
+    border: none;
+    background: transparent;
+    margin-left: -35px;
+    cursor: pointer;
+}
+
+.header--search button img{
+    width: 16px;
+    height: 16px;
+}
+
+.header--menu{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.header--menu img{
+    width: 24px;
+    height: 24px;
+}
+
+
+.banner{
+    background: #fff url('../images/bg.jpg') center/cover;
+    padding: 90px;
+}
+
+
+
+.banner-images{
+    margin-top: 170px;
+    display: flex;
+    gap: 50px;
+}
+
+.banner-images img{
+    width: 170px;
+    height: 170px;
+    border: 6px solid var(--main-color);
+    border-radius: 50%;
+}
+
+
+
+.area1, .area2, .area3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area1{
+    grid-template-areas: 
+        "content img2"
+        "img1 img2"
+    ;
+}
+
+.area-content{
+    grid-area: content;
+    padding: 100px;
+}
+
+.area1-quote{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.area-text{
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.area1-img1{
+    background: #ccc url('../images/f2.jpg') center/cover;
+    grid-area: img1;
+    height: 500px;
+}
+
+.area1-img2{
+    background: #eee url('../images/f1.jpg') center/cover;
+    grid-area: img2;
+}
+
+.area2{
+    grid-template-areas: 
+        "img2 content"
+        "img2 img1"
+    ;
+}
+
+.area2-img1{
+    background: #ccc url('../images/f4.jpg') center/cover;
+    grid-area: img1;
+    height: 600px;
+}
+
+.area2-img2{
+    background: #eee url('../images/f3.jpg') center/cover;
+    grid-area: img2;
+}
+
+.area3{
+    grid-template-areas:
+        "content img"
+    ;
+}
+
+.area3 .area-content{
+    background: #fff url('../images/bg2.jpg') left/cover; 
+    padding: 350px 100px;
+}
+
+.area3-img{
+    background: #ccc url('../images/f5.jpg') center/cover;
+}
+
+.area4{
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-template-areas: "content img";
+    background-color: #e8e9ee;
+}
+
+.area4 .area-content{
+    padding: 320px 100px;
+}
+
+.area4-img{
+    grid-area: img;
+    background: #ccc url('../images/bg3.jpg') left/cover;
+}
+
+.area5{
+    background: #ccc url('../images/bg4.jpg') center/cover;
+    height: 100vh;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 120px;
+}
+
+@media (min-width: 430px) and (max-width: 780px){
+    .bar{
+        width: 120px;
+        height: 18px;
+    }
+
+    h1{
+        font-size: 90px;
+    }
+    h2{
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .banner-images{
+        gap: 30px;
+    }
+    
+    .banner-images img{
+        width: 130px;
+        height: 130px;
+        border: 6px solid var(--main-color);
+        border-radius: 50%;
+    }
+
+    .area1-quote{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .area-text{
+        margin-bottom: 50px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .area1, .area2, .area3{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area4 .area-content{
+        padding: 200px 100px;
+    }
+}
+
+@media(max-width: 430px){
+
+    .header-left img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .header--search form{
+        width: 150px;
+    }
+
+    .header--search input{
+        max-width: 150px;
+    }
+
+    .header--menu{
+        margin-left: 30px;
+    }
+
+    .bar{
+        width: 80px;
+        height: 15px;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .button{
+        font-size: 10px;
+        padding: 10px 20px;
+        width: 70px;
+        text-align: center;
+    }
+
+    .banner{
+        padding: 40px;
+    }
+
+    .banner-images{
+        margin-top: 100px;
+        gap: 10px;
+    }
+    
+    .banner-images img{
+        width: 70px;
+        height: 70px;
+        border: 6px solid var(--main-color);
+        border-radius: 50%;
+    }
+
+    .area1-quote{
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .area-text{
+        margin-bottom: 50px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .area1, .area2, .area3{
+        display: grid;
+        grid-template-columns: 5fr;
+    }
+
+    .area-content{
+        padding: 40px;
+    }
+
+    .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area4 .area-content{
+        padding: 100px 40px;
+    }
+    footer{
+        padding: 70px 40px;
+        font-size: 15px;
+    }
+}
