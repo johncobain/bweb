@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+
+:root{
+    --main-color: #A460ED;
+    --secondary-color: #F07DEA;
+    --font-main-color: #EEEEEE;
+    --font-secondary-color: #9FC9F3;
+}
+
+body{
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header .logo{
+    font-size: 23px;
+    font-weight: 900;
+    color: var(--font-main-color);
+}
+
+header .menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .menu-line{
+    height: 3px;
+    background-color: #333;
+}
+
+
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.container .leftside{
+    flex: 1;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.container .info{
+    color: var(--font-main-color);
+    padding: 0 70px;
+}
+
+.container .info .desc{
+    color: var(--font-secondary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.container .info .name{
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 130px;
+    margin: 10px 0 30px;
+}
+
+.container .info .buttons a{
+    display: inline-block;
+    background-color: var(--font-main-color);
+    color: var(--main-color);
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 7px;
+    box-shadow: 0 0 10px #777;
+    transition: .3s;
+}
+
+.container .info .buttons a.light{
+    background-color: var(--secondary-color);
+    color: var(--font-main-color);
+}
+
+.container .info .buttons a:hover{
+    opacity: .8;
+}
+
+.container .rightside{
+    flex: 1;
+    background: var(--secondary-color) url('../images/hero.jpeg') right/cover;
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 70px;
+    color: var(--font-main-color);
+    font-size: 13px;
+}
+
+
+@media (max-width: 1165px){
+    header{
+        position: initial;
+        background-color: var(--main-color);
+    }
+
+    header .menu-line{
+        background-color: var(--font-main-color);
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .leftside{
+        flex: none;
+        padding: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer{
+        position: initial;
+        color: var(--font-secondary-color);
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 865px){
+    .container .leftside .info{
+        padding: 0;
+    }
+    .container .leftside .info .name{
+        font-size: 90px;
+        line-height: 100px;
+    }
+}
+
+@media (max-width: 500px){
+    .container .leftside .info .desc{
+        font-size: 20px;
+    }
+    .container .leftside .info .name{
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .container .leftside .info .buttons a{
+        display: block;
+        margin: 0 0 20px 0;
+    }
+}
