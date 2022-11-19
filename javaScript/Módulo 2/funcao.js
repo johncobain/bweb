@@ -141,4 +141,31 @@ const sobrenome = sob => 'John ' + sob;
 
 console.log(sobrenome('Cobain'));
 */
+/*
+function add(){
+    // let count = 10;
+    count++;
+}
 
+let count = 0;
+
+add();
+add();
+
+console.log(count);
+*/
+/*
+function addSquares(...nums){
+    const square = x => x*x;
+
+    let sumSquares = 0;
+    for(i of nums){
+        sumSquares += square(i);
+    }
+    return sumSquares;
+}
+
+console.log(addSquares(2,4));
+console.log(addSquares(2,4,9));
+console.log(addSquares(4,9,12));
+*/
