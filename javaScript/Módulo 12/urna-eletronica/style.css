@@ -157,3 +157,18 @@ body{
     width: 90px;
     height: 50px;
 }
+
+.aviso--grande{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.aviso--tela{
+    font-size: 90px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
