@@ -1,0 +1,41 @@
+body{
+    background-color: #ddf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.area{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 25%;
+    height: auto;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.remember{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gray{
+    color: #999999;
+}
+
+.padding{
+    padding: 10px;
+    margin: 0;
+}
